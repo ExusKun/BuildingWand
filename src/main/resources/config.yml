@@ -1,0 +1,55 @@
+# exBuildWand - Developed by Exus 07/03/2023
+# Last updated 07/03/2023
+
+# Configuration
+# Set the Chat Color of the durability tag using durability-chat-color
+durability-chat-color: '&b'
+
+# Custom Building Wands
+# Customize the building wands hosted in your server by simply adding more fields below.
+# item_type: (required) allows you to change the item used for the building wand (use Minecraft ID)
+# name: (required) allows you to set the name for the building wand - colors are allowed.
+# durability: (required) allows you to define how many times a build wand can be used
+# durability-type: (required) allows you to set if the durability is per block or per place - chose between: block / place
+# max-block: (required) maximum amount of blocks the wand can place at any given time
+# enchanted: (required) make the building wand appear enchanted or not
+# description: (optional) add some lore to the wand. Supports line breaks (\n)
+
+wands:
+  starterWand:
+    item_type: STICK
+    name: '&fStarters Building Wand'
+    durability: 100
+    max-block: 4
+    enchanted: false
+    description:
+      - 'A Starters Building Wand'
+
+  expertBuildWand:
+    item_type: BLAZE_ROD
+    name: '&6Expert Building Wand'
+    durability: 500
+    max-block: 30
+    enchanted: true
+    description:
+      - '&fDropped by the legendary blaze &b&kll&6&lArtreus&b&kll'
+      - '&fin the depths of the &dNether'
+
+  infiniteWand:
+    item_type: END_ROD
+    name: '&bInfinite Wand'
+    durability: -1
+    max-block: 64
+    enchanted: true
+    description:
+      - '&fCrafted by &dancient dwarves&f 1600 years ago.'
+      - '&fWhispers of the &b&l&kKK&c&lWitness&b&l&kKK &fcan be heard'
+      - '&fcoming from this stick.'
+
+# BLOCK BLACKLIST
+# All blocks that should not be buildable are
+block-blacklist:
+  - 'WATER'
+  - 'LAVA'
+  - 'AIR'
+  - 'BEDROCK'

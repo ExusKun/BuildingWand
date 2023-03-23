@@ -1,4 +1,10 @@
 name: exBuildingWand
 version: '${project.version}'
-main: me.exus.dev.buildwand.ExBuildingWand
+main: me.exus.dev.buildwand.Main
 api-version: 1.16
+softdepend: [WorldGuard, SuperiorSkyblock2]
+commands:
+  bw:
+    description: Builders Wand Home Command
+    usage: /<command>
+    permission: exbw.bw
