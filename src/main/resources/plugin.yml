@@ -1,0 +1,4 @@
+name: exBuildingWand
+version: '${project.version}'
+main: me.exus.dev.buildwand.ExBuildingWand
+api-version: 1.16
